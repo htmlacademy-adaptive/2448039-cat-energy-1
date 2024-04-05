@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo logo" href="index.html">
+        <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи"> 
+        <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden"> Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-form main-container">
+      <h1 class="main-form__title"> Подбор программы</h1>
+        <section class="anketa"> 
+          <div class="anketa__wrapper">
+            <h2 class="visually-hidden"> Анкета питомца</h2>
+            <b class="anketa__intro"> Заполните анкету, и мы подберем <br>программу питания для вашего кота</b>
+            <div class="anketa__container">
+             <form class="anketa__form form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form__group">
+                <label class="form__label" for="name"> Имя:<sup>*</sup></label>
+                <input class="form__field field" type="text" id="name" value="Барсик" placeholder="Укажите имя" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="weight"> Вес (гк):<sup>*</sup></label>
+                <input class="form__field field" type="number" id="weight" value="7" placeholder="Укажите вес" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="age"> Возраст (лет):</label>
+                <input class="form__field field" type="number" id="age" value="7" placeholder="Укажите возраст">
+              </div>
+             </form>
+             <fieldset class="anketa__filter filter">
+              <legend class="visually-hidden"> Выберите тип программы </legend>
+              <ul class="anketa__list">
+                <li class="anketa__item">
+                  <label class="anketa__control control">
+                    <input class="control__input" type="radio" name="type-program" value="type-slim" checked>
+                    <span class="control__label"> Похудение</span>
+                  </label>
+                </li>
+                <li class="anketa__item">
+                  <label class="anketa__control control">
+                    <input class="control__input" type="radio" name="type-program" value="type-pro">
+                    <span class="control__label"> Набор массы</span>
+                  </label>
+                </li>
+                <li class="anketa__item">
+                  <label class="anketa__control control">
+                    <input class="control__input" type="radio" name="type-program" value="type-unknown">
+                    <span class="control__label"> Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+             </fieldset>
+            </div>
+          </div>
+        </section>
+        
+    </main>
+  </body>
+</html>
