@@ -37,17 +37,17 @@
             <b class="anketa__intro"> Заполните анкету, и мы подберем <br>программу питания для вашего кота</b>
             <div class="anketa__container">
              <form class="anketa__form form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="form__group">
+              <div class="anketa__group form__group">
                 <label class="form__label" for="name"> Имя:<sup>*</sup></label>
-                <input class="form__field field" type="text" id="name" value="Барсик" placeholder="Укажите имя" required>
+                <input class="form__field field" type="text" id="name" name="name" value="Барсик" placeholder="Укажите имя" required>
               </div>
-              <div class="form__group">
+              <div class="anketa__group form__group">
                 <label class="form__label" for="weight"> Вес (гк):<sup>*</sup></label>
-                <input class="form__field field" type="number" id="weight" value="7" placeholder="Укажите вес" required>
+                <input class="form__field field" type="number" id="weight" name="weight" value="7" placeholder="Укажите вес" required>
               </div>
-              <div class="form__group">
+              <div class="anketa__group form__group">
                 <label class="form__label" for="age"> Возраст (лет):</label>
-                <input class="form__field field" type="number" id="age" value="7" placeholder="Укажите возраст">
+                <input class="form__field field" type="number" id="age" name="age" value="7" placeholder="Укажите возраст">
               </div>
              </form>
              <fieldset class="anketa__filter filter">
@@ -77,6 +77,21 @@
           </div>
         </section>
         
+        <section class="owner">
+          <div class="owner__wrapper">
+            <h2 class="owner__title"> Контактные данные <br>(владельца кота)</h2>
+            <div class="owner_container">
+              <form class="owner__form form" action="https://echo.htmlacademy.ru/" method="post">
+               <div class="owner__group form__group">
+                 <label class="form__label" for="owner-email"> E-mail:<sup>*</sup></label>
+                 <input class="form__field field" type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com" placeholder="Ваш e-mail" required>
+               </div>
+               <div class="owner__group form__group">
+                 <label class="form__label" for="weight"> Телефон:<sup>*</sup></label>
+                 <input class="form__field field" type="text" id="owner-phone" value="8 (960) 900-60-90" placeholder="Ваш телефон" required>
+               </div>
+          </div>
+        </section>
     </main>
   </body>
 </html>
