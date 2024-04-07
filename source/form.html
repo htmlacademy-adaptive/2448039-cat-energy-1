@@ -16,13 +16,13 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item--current">
+            <li class="main-nav__item main-nav__item--current">
               <a href="#">Подбор программы</a>
             </li>
           </ul>
@@ -31,15 +31,16 @@
     </header>
     <main class="main-form main-container">
       <h1 class="main-form__title"> Подбор программы</h1>
-      <b class="main-form__intro"> Заполните анкету, и мы подберем <br>программу питания для вашего кота</b>
         <section class="anketa"> 
+          <h2 class="visually-hidden">Анкета</h2>
+          <b class="main-form__intro"> Заполните анкету, и мы подберем <br>программу питания для вашего кота</b>
           <form class="anketa__form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="anketa__group group-pet">
               <legend class="visually-hidden"> Сведения о питомце </legend>
                 <div class="group-pet__form">
                   <label class="group-pet__label anketa__label" for="name"> Имя:<sup>*</sup></label>
                   <input class="group-pet__field anketa__field" type="text" id="name" name="name" value="Барсик" placeholder="Укажите имя" required>
-                <div>
+                </div>
                 <div class="group-pet__form">
                   <label class="group-pet__label anketa__label" for="weight"> Вес (гк):<sup>*</sup></label>
                   <input class="group-pet__field anketa__field" type="number" id="weight" name="weight" value="7" placeholder="Укажите вес" required>
@@ -116,7 +117,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="additional__button button" type="submit"> Отправить заявку</button>
+              <button class="anketa__button button" type="submit"> Отправить заявку</button>
                 <p class="anketa__info"> * — Обязательные поля </p>
           </form>
         </section>
