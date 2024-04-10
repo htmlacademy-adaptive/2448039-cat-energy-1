@@ -29,97 +29,97 @@
         </div>
       </nav>
     </header>
-    <main class="main-form main-container">
-      <h1 class="main-form__title"> Подбор программы</h1>
-      <section class="anketa">
+    <main class="paige-form paige-container">
+      <h1 class="paige-form__title"> Подбор программы</h1>
+      <section class="form-section">
         <h2 class="visually-hidden">Анкета</h2>
-        <b class="main-form__intro"> Заполните анкету, и мы подберем <br>программу питания для вашего кота</b>
-        <form class="anketa__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="anketa__group group-pet">
+        <b class="form-section__intro"> Заполните анкету, и мы подберем <br>программу питания для вашего кота</b>
+        <form class="form-section__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__group form__group--pet">
             <legend class="visually-hidden"> Сведения о питомце </legend>
-            <div class="group-pet__form">
-              <label class="group-pet__label anketa__label" for="name"> Имя:<sup>*</sup></label>
-              <input class="group-pet__field anketa__field" type="text" id="name" name="name" value="Барсик" placeholder="Укажите имя" required>
+            <div class="form__content">
+              <label class="form__label" for="name"> Имя:<sup>*</sup></label>
+              <input class="form__field" type="text" id="name" name="name" value="Барсик" placeholder="Укажите имя" required>
             </div>
-            <div class="group-pet__form">
-              <label class="group-pet__label anketa__label" for="weight"> Вес (гк):<sup>*</sup></label>
-              <input class="group-pet__field anketa__field" type="number" id="weight" name="weight" value="7" placeholder="Укажите вес" required>
+            <div class="form__content">
+              <label class="form__label" for="weight"> Вес (гк):<sup>*</sup></label>
+              <input class="form__field" type="number" id="weight" name="weight" value="7" placeholder="Укажите вес" required>
             </div>
-            <div class="group-pet__form">
-              <label class="group-pet__label anketa__label" for="age"> Возраст (лет):</label>
-              <input class="group-pet__field anketa__field" type="number" id="age" name="age" value="7" placeholder="Укажите возраст">
+            <div class="form__content">
+              <label class="form__label" for="age"> Возраст (лет):</label>
+              <input class="form__field" type="number" id="age" name="age" value="7" placeholder="Укажите возраст">
             </div>
           </fieldset>
-          <fieldset class="anketa__group group-program">
+          <fieldset class="form__group form__group--program">
             <legend class="visually-hidden"> Выберите тип программы </legend>
-            <ul class="group-program__list">
-              <li class="group-program__item">
-                <label class="group-program__control control">
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__control control">
                   <input class="control__input" type="radio" name="type-program" value="type-slim" checked>
                   <span class="control__label"> Похудение</span>
                 </label>
               </li>
-              <li class="group-program__item">
-                <label class="group-program__control control">
+              <li class="form__item">
+                <label class="form__control control">
                   <input class="control__input" type="radio" name="type-program" value="type-pro">
                   <span class="control__label"> Набор массы</span>
                 </label>
               </li>
-              <li class="group-program__item">
-                <label class="group-program__control control">
+              <li class="form__item">
+                <label class="form__control control">
                   <input class="control__input" type="radio" name="type-program" value="type-unknown">
                   <span class="control__label"> Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="anketa__group group-owner">
-            <legend class="group-owner__legend anketa__legend"> Контактные данные <br>(владельца кота)</legend>
-            <div class="group-owner__form">
-              <label class="group-owner__label anketa__label" for="owner-email"> E-mail:<sup>*</sup></label>
-              <input class="group-owner__field anketa__field" type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com" placeholder="Ваш e-mail" required>
+          <fieldset class="form__group form__group--owner">
+            <legend class="form__legend"> Контактные данные <br>(владельца кота)</legend>
+            <div class="form__content">
+              <label class="form__label" for="owner-email"> E-mail:<sup>*</sup></label>
+              <input class="form__field" type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com" placeholder="Ваш e-mail" required>
             </div>
-            <div class="group-owner__form">
-              <label class="group-owner__label anketa__label" for="weight"> Телефон:<sup>*</sup></label>
-              <input class="group-owner__field anketa__field" type="text" id="owner-phone" value="8 (960) 900-60-90" placeholder="Ваш телефон" required>
+            <div class="form__content">
+              <label class="form__label" for="weight"> Телефон:<sup>*</sup></label>
+              <input class="form__field" type="text" id="owner-phone" value="8 (960) 900-60-90" placeholder="Ваш телефон" required>
             </div>
           </fieldset>
-          <fieldset class="anketa__group group-comments">
-            <legend class="group-comments__legend anketa__legend"> Комментарий</legend>
+          <fieldset class="form__group form__group--comments">
+            <legend class="form_legend"> Комментарий</legend>
             <textarea name="comment" id="comment-field" rows="6" cols="32">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="anketa__group group-additional">
-            <legend class="group-additional__legend anketa__legend"> Дополнительно </legend>
-            <ul class="group-additional__list">
-              <li class="group-additional__item">
-                <label class="group-additional__control control">
+          <fieldset class="form__group form__group--additional">
+            <legend class="form__legend"> Дополнительно </legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__control control">
                   <input class="control__input" type="checkbox" name="sweetener" checked>
                   <span class="control__label"> Сахарозаменитель</span>
                 </label>
               </li>
-              <li class="group-additional__item">
-                <label class="group-additional__control control">
+              <li class="form__item">
+                <label class="form__control control">
                   <input class="control__input" type="checkbox" name="water">
                   <span class="control__label"> Питьевая вода</span>
                 </label>
               </li>
-              <li class="group-additional__item">
-                <label class="group-additional__control control">
+              <li class="form__item">
+                <label class="form__control control">
                   <input class="control__input" type="checkbox" name="milk">
                   <span class="control__label"> Молоко</span>
                 </label>
               </li>
-              <li class="group-additional__item">
-                <label class="group-additional__control control">
+              <li class="form__item">
+                <label class="form__control control">
                   <input class="control__input" type="checkbox" name="vitamins">
                   <span class="control__label"> Витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <div class="anketa__wrapper">
-            <button class="anketa__button button" type="submit"> Отправить заявку</button>
-            <p class="anketa__info"> * — Обязательные поля </p>
+          <div class="form-section__wrapper">
+            <button class="form-section__button button" type="submit"> Отправить заявку</button>
+            <p class="form-section__info"> * — Обязательные поля </p>
           </div>
         </form>
       </section>
@@ -151,9 +151,9 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link academy" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="academy__text">HTML Academy</p>
-            <img class="academy__logo" src="img/logo-academy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          <a class="copyright__link developer" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="developer__text">HTML Academy</p>
+            <img class="developer__logo" src="img/logo-academy.svg" width="27" height="34" alt="Логотип HTML Academy">
           </a>
         </div>
       </div>
