@@ -1,12 +1,24 @@
 .main-header {
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
   width: 320px;
 
+&__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 13px;
+  margin-bottom: 37px;
+}
 &__logo {
   text-decoration: none;
 }
-
-
+&__toggle {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/toggle-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+}
 }

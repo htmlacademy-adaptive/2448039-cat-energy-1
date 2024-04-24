@@ -7,24 +7,26 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
-        <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo logo" href="index.html">
+          <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
+          <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+        </a>
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden"> Открыть меню</span>
         </button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
-              <a href="#">Главная</a>
+              <a class="main-nav__link>" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
