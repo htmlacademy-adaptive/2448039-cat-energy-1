@@ -1,0 +1,63 @@
+.product {
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    display: flex;
+    margin-bottom: 17px;
+  }
+
+  &__image {
+    display: block;
+    object-fit: cover;
+  }
+
+  &__price {
+    width: 140px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "Oswald", "Arial, sans-serif";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  &__info {
+    width: 140px;
+  }
+
+  &__name {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__value {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+  }
+}
+
+.product--all .product__content{
+      flex-direction: column;
+      padding-top: 53px;
+  }
+
+ .product--all .product__title {
+    margin-bottom: 8px;
+    text-align: center;
+    color: #111111;
+ }
+
+ .product--all .product__text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+ }
+
