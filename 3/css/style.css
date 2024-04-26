@@ -561,7 +561,7 @@
   text-decoration: none;
 }
 .copyright__text {
-  font-family: "Lato", "Arial, sans-serif";
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
