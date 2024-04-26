@@ -68,7 +68,7 @@
   width: 320px;
   margin-bottom: 24px;
 }
-.main-nav__list {
+.main-vav__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -85,7 +85,7 @@
 .main-nav__item:not(:last-child) {
   margin-bottom: 46px;
 }
-.main-nav__link {
+.man-nav__link {
   color: #000000;
   text-decoration: none;
 }
