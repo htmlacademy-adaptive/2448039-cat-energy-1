@@ -1,24 +1,28 @@
-.advantages {
-  &__wrapper {
-    margin: 0 auto;
-    width: 320px;
-    padding: 0 20px;
-    margin-bottom: 49px;
-  }
+.advantages__wrapper {
+  .wrapper__size;
+  padding-top: 20px;
+  padding-bottom: 49px;
+}
 
-  &__title {
-    margin: 0;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
-    color: #000000;
-    margin-bottom: 40px;
-  }
+.advantages__title {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 40px;
+}
 
-  &__list {
-    .list__reset;
-    display: grid;
-    gap: 20px;
-  }
+.advantages__list {
+  .list__reset;
+  display: grid;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advantages__description {
+  margin: 0;
 }

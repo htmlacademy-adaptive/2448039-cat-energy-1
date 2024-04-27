@@ -2,9 +2,15 @@
   margin: 0;
   padding: 0;
   border: none;
+  margin-bottom: 46px;
 }
 
 .form__content {
+  display: flex;
+  align-items: center;
+}
+
+.form__content:not(:last-child) {
   margin-bottom: 14px;
 }
 
@@ -18,18 +24,18 @@
 }
 
 .form__label {
+  min-width: max-content;
   margin-right: 13px;
 }
 
 .form__field {
-  padding-top: 12px;
-  padding-left: 13px;
-  padding-bottom: 11px;
+  width: 100%;
+  padding: 12px 13px;
   border: 1px solid #e7e7e7;
+  box-sizing: border-box;
 }
 
 .form__field::placeholder {
-  font-size: 13px;
   text-transform: none;
 }
 
@@ -37,7 +43,7 @@
   .list__reset;
 }
 
-.form__item {
+.form__item:not(:last-child) {
   margin-bottom: 19px;
 }
 
@@ -50,7 +56,22 @@
   margin-bottom: 35px;
 }
 
-.form__group--comments textarea {
+//--program
+.form__group--program {
+  margin-bottom: 45px;
+}
+
+//--owner
+.form__group--owner {
+  margin-bottom: 24px;
+}
+
+//--comments
+.form__group--comments {
+  margin-bottom: 23px;
+}
+
+.form__group--comments .form__text {
   padding: 0;
   border: 1px solid #e7e7e7;
 }
@@ -63,4 +84,13 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+}
+
+.form__group--comments .form__legend {
+  margin-bottom: 38px;
+}
+
+//--additional
+.form__group--additional .form__legend {
+  margin-bottom: 34px;
 }
