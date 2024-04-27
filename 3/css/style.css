@@ -31,11 +31,11 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "Lato", "Arial, sans-serif";
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .main-header__wrapper {
   margin: 0 auto;
@@ -99,7 +99,7 @@
 }
 .promo__title {
   margin: 0;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -108,7 +108,7 @@
 }
 .promo__slogan {
   padding: 0;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -124,15 +124,15 @@
 }
 .button {
   padding: 10px 44px;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  color: #FFFFFF;
-  background-color: #68B738;
+  color: #ffffff;
+  background-color: #68b738;
   border: none;
   cursor: pointer;
 }
@@ -151,11 +151,11 @@
 }
 .programs__item {
   padding: 30px 33px 18px 20px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .programs__title {
   margin: 0;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -169,7 +169,7 @@
   margin-bottom: 38px;
 }
 .programs__link {
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -185,7 +185,7 @@
 }
 .advantages__title {
   margin: 0;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -200,7 +200,7 @@
   gap: 20px;
 }
 .example {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 .example__wrapper {
   margin: 0 auto;
@@ -213,7 +213,7 @@
 }
 .example__title {
   margin: 0;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -232,7 +232,7 @@
   text-align: center;
 }
 .example__size {
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -242,14 +242,14 @@
 }
 .example__description {
   margin: 0;
-  font-family: "Lato", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
 }
 .example__total {
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -267,7 +267,7 @@
 }
 .contacts__invite {
   width: 140px;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -276,18 +276,18 @@
 .contacts__address {
   width: 140px;
   margin: 0;
-  font-family: "Lato", "Arial, sans-serif";
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
 }
 .contacts--dark {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .page-catalog__title {
   margin: 27px 42px 41px 20px;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -364,7 +364,7 @@
 }
 .product--all .product__button {
   color: #444444;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .additionally__wrapper {
   margin: 0 auto;
@@ -374,7 +374,7 @@
 .additionally__title {
   margin: 0;
   padding: 0 20px;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -396,7 +396,7 @@
 }
 .additionally__name {
   margin: 0;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -426,12 +426,12 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: rgba(104, 183, 56, 0.85);
   text-align: center;
 }
 .page-form__title {
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -445,7 +445,7 @@
 .form-section__intro {
   display: block;
   padding: 0 20px;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
@@ -473,7 +473,7 @@
 }
 .form__label,
 .form__field {
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
@@ -486,7 +486,7 @@
   padding-top: 12px;
   padding-left: 13px;
   padding-bottom: 11px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 }
 .form__field::placeholder {
   font-size: 13px;
@@ -501,7 +501,7 @@
   margin-bottom: 19px;
 }
 .form__legend {
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -510,11 +510,11 @@
 }
 .form__group--comments textarea {
   padding: 0;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 }
 .form__text::placeholder {
   padding: 12px;
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -522,14 +522,14 @@
   text-transform: uppercase;
 }
 .control__label {
-  font-family: "Oswald", "Arial, sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
   color: #444444;
 }
 .main-footer {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .main-footer__wrapper {
   margin: 0 auto;
