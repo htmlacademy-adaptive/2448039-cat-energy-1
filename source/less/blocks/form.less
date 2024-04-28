@@ -1,0 +1,96 @@
+.form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 46px;
+}
+
+.form__content {
+  display: flex;
+  align-items: center;
+}
+
+.form__content:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.form__label,
+.form__field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form__label {
+  min-width: max-content;
+  margin-right: 13px;
+}
+
+.form__field {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+}
+
+.form__field::placeholder {
+  text-transform: none;
+}
+
+.form__list {
+  .list__reset;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.form__legend {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+//--program
+.form__group--program {
+  margin-bottom: 45px;
+}
+
+//--owner
+.form__group--owner {
+  margin-bottom: 24px;
+}
+
+//--comments
+.form__group--comments {
+  margin-bottom: 23px;
+}
+
+.form__group--comments .form__text {
+  padding: 0;
+  border: 1px solid #e7e7e7;
+}
+
+.form__text::placeholder {
+  padding: 12px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__group--comments .form__legend {
+  margin-bottom: 38px;
+}
+
+//--additional
+.form__group--additional .form__legend {
+  margin-bottom: 34px;
+}
