@@ -1,5 +1,17 @@
 .main-header__wrapper {
   .wrapper__size;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: @tablet-width;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+
 }
 
 .main-header__container {
@@ -10,9 +22,18 @@
 }
 
 .main-header__logo {
+  height: 38px;
   display: flex;
   align-items: center;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 59px;
+  }
 }
 
 .main-header__toggle {
@@ -23,4 +44,8 @@
   background-position: center;
   border: none;
   background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
