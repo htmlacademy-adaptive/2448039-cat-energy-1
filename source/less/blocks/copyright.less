@@ -1,7 +1,12 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 140px;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+   gap: 23px;
+  }
 }
 
 .copyright__link {

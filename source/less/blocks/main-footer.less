@@ -5,8 +5,19 @@
 
 .main-footer__wrapper {
   .wrapper__size;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 40px;
   text-align: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }

@@ -1,8 +1,26 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
   .wrapper__size;
   padding-top: 26px;
   padding-bottom: 26px;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    padding: 60px 78px 60px 80px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: @light;
+  }
 }
 
 .contacts__invite {
