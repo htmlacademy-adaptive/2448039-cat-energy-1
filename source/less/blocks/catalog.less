@@ -3,10 +3,12 @@
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
+    padding: 0 110px;
   }
 }
 
@@ -15,13 +17,11 @@
   display: grid;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
     grid-template-columns: repeat(2, 324px);
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
     grid-template-columns: repeat(4, 245px);
     justify-content: space-between;
   }

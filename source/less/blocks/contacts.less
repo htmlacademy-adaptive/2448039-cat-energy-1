@@ -4,12 +4,12 @@
 
 .contacts__wrapper {
   .wrapper__size;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 26px 20px;
   display: flex;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
+    padding: 26px 30px;
     justify-content: space-between;
   }
 
@@ -40,6 +40,14 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+   text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }
 
 .contacts__maps {
