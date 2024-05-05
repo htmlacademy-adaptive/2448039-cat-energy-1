@@ -29,9 +29,8 @@
   display: grid;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     column-gap: 153px;
-    gap: 37xp;
   }
 
   @media (min-width: @desktop-width) {
@@ -39,12 +38,16 @@
   }
 }
 
+.advantages__item {
+  padding-left: 80px;
+
+   @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
+}
+
 .advantages__item:not(:last-child) {
   margin-bottom: 20px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 0;
-  }
 }
 
 .advantages__description {

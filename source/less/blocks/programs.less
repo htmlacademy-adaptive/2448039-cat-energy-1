@@ -48,6 +48,15 @@
 .programs__description {
   margin: 0;
   margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 52px;
+    padding-right: 316px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 61px;
+  }
 }
 
 .programs__link {
@@ -58,4 +67,8 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 52px;
+  }
 }
