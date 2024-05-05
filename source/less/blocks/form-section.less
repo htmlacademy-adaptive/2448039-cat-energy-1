@@ -1,5 +1,16 @@
 .form-section__wrapper {
   .wrapper__size;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 30px;
+    margin: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding: 0 110px;
+  }
 }
 
 .form-section__intro {
@@ -24,4 +35,18 @@
   margin: 0;
   text-align: center;
   color: #000000;
+}
+
+.form-section__content {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 284px auto;
+    gap: 60px;
+    justify-content: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 570px auto;
+    gap: 80px;
+  }
 }
