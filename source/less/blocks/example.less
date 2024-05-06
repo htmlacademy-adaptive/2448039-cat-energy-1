@@ -115,8 +115,14 @@
 }
 
 .example__slider {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    left: 200px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-row: 1/ -1;
     grid-column: 2/ 3;
+    position: static;
   }
 }
