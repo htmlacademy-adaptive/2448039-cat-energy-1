@@ -1,6 +1,17 @@
+.programs {
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 82px;
+  }
+}
+
 .programs__wrapper {
   .wrapper__size;
-  padding-top: 20px;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
@@ -9,7 +20,7 @@
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    padding: 82px 110px 0 110px;
+    padding: 0 110px;
   }
 }
 
@@ -31,6 +42,10 @@
 .programs__item {
   padding: 30px 33px 18px 20px;
   background-color: @dark;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 52px;
+  }
 }
 
 .programs__title {
@@ -45,11 +60,11 @@
   margin-left: 90px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 52px;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 214px;
+    margin-left: 62px;
   }
 }
 
@@ -58,12 +73,11 @@
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 52px;
-    padding-right: 316px;
+    max-width: 340px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 61px;
+    max-width: 457px;
   }
 }
 
@@ -75,8 +89,4 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 52px;
-  }
 }

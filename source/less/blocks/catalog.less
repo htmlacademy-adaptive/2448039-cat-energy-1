@@ -12,6 +12,16 @@
   }
 }
 
+.catalog__title {
+  margin-top: 27px;
+  margin-bottom: 41px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #000000;
+}
+
 .catalog__list {
   .list__reset;
   display: grid;
@@ -19,11 +29,13 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 324px);
     justify-content: space-between;
+    gap: 60px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 245px);
     justify-content: space-between;
+    row-gap: 63px;
   }
 }
 

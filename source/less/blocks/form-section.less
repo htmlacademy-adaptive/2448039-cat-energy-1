@@ -13,6 +13,16 @@
   }
 }
 
+.form-section__title {
+  margin-top: 27px;
+  margin-bottom: 37px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #000000;
+}
+
 .form-section__intro {
   display: block;
   font-family: "Oswald", "Arial", sans-serif;
@@ -29,6 +39,10 @@
 .form-section__button {
   width: 100%;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form-section__info {
