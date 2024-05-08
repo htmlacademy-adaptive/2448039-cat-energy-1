@@ -1,7 +1,33 @@
+.additionally {
+  padding-top: 25px;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 76px;
+    padding-bottom: 87px;
+  }
+}
+
 .additionally__wrapper {
   .wrapper__size;
-  margin-bottom: 35px;
-  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding: 0 110px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
 }
 
 .additionally__title {
@@ -12,6 +38,11 @@
   font-weight: 400;
   color: #000000;
   margin-bottom: 49px;
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin-bottom: 80px;
+  }
 }
 
 .additionally__list {
@@ -19,11 +50,46 @@
   display: grid;
   gap: 31px;
   margin-bottom: 54px;
+
+  @media (min-width: @tablet-width) {
+    gap: 54px;
+    margin-bottom: 98px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 894px;
+    gap: 42px;
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
 }
 
 .additionally__item {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.additionally__container {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 610px;
+  }
 }
 
 .additionally__name {
@@ -34,21 +100,34 @@
   font-weight: 400;
   color: #222222;
   text-transform: uppercase;
-  margin-bottom: 13px;
 }
 
 .additionally__content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+
+  @media (min-width: @desktop-width) {
+    width: 285px;
+  }
 }
 
 .additionally__text {
   margin: 0;
   line-height: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 49px;
+  }
 }
 
 .additionally__price {
   line-height: 14px;
   text-align: right;
+}
+
+.additionally__button {
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    box-sizing: border-box;
+  }
 }

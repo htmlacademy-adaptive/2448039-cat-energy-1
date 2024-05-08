@@ -1,5 +1,26 @@
 .form-section__wrapper {
   .wrapper__size;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 30px;
+    margin: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding: 0 110px;
+  }
+}
+
+.form-section__title {
+  margin-top: 27px;
+  margin-bottom: 37px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #000000;
 }
 
 .form-section__intro {
@@ -18,10 +39,28 @@
 .form-section__button {
   width: 100%;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form-section__info {
   margin: 0;
   text-align: center;
   color: #000000;
+}
+
+.form-section__content {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 284px auto;
+    gap: 60px;
+    justify-content: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 570px auto;
+    gap: 80px;
+  }
 }

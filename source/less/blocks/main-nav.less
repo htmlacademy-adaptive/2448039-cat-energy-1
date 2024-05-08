@@ -1,5 +1,16 @@
 .main-nav__list {
   .list__reset;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 436px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 475px;
+  }
 }
 
 .main-nav__item {
@@ -13,6 +24,10 @@
 
 .main-nav__item:not(:last-child) {
   margin-bottom: 46px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-nav__link {

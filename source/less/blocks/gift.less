@@ -1,3 +1,11 @@
+.gift {
+  background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
+}
+
 .gift__slogan {
   margin: 0;
   padding: 187px 61px 43px 58px;
@@ -5,6 +13,16 @@
   line-height: 20px;
   font-weight: 400;
   color: #ffffff;
-  background-color: rgba(104, 183, 56, 0.85);
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 125px 69px 421px;
+    max-width: 161px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 185px 42px 43px 42px;
+    text-align: center;
+  }
 }
