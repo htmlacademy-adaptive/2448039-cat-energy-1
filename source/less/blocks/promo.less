@@ -1,3 +1,26 @@
+.promo {
+  padding-top: 27px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 29px;
+  }
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  height: 302px;
+  width: 100%;
+  background-color: rgba(104, 183, 56, 0.85);
+  top: -27px;
+  z-index: -1;
+}
+
 .promo__wrapper {
   .wrapper__size;
   display: grid;
@@ -6,22 +29,22 @@
   @media (min-width: @tablet-width) {
     text-align: left;
     width: @tablet-width;
-    padding: 0 30px 0 120px;
+    padding: 0 30px;
+    grid-template-columns: 90px auto;
     grid-template-rows: repeat(4, auto);
-    gap: 40px;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    padding: 0 110px 0 190px;
-    grid-template-columns: 367px auto 610px;
+    padding: 0 40px;
+    grid-template-columns: 80px 367px auto 610px;
     grid-template-rows: repeat(3, auto);
-    column-gap: 0;
   }
 }
 
 .promo__title {
-  margin: 27px 0 25px 0;
+  margin-top: 0;
+  margin-bottom: 25px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -29,15 +52,18 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
     max-width: 420px;
+    grid-column: 2/3;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 1/3;
+    padding-top: 81px;
+    grid-column: 2/4;
     grid-row: 1/2;
+    order: 2;
   }
 }
 
@@ -51,8 +77,14 @@
   margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
+    grid-column: 2/3;
     grid-row: 2/3;
-    margin-bottom: 0;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+    grid-row: 2/3;
   }
 }
 
@@ -63,7 +95,7 @@
     height: 54px;
     box-sizing: border-box;
     z-index: 1;
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 3/4;
   }
 }
@@ -74,14 +106,14 @@
 
   @media (min-width: @tablet-width) {
     grid-row: 3/5;
-    grid-column: 1/2;
+    grid-column: 1/3;
     margin-bottom: 0;
     order: 1;
     justify-self: center;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 2/4;
+    grid-column: 3/4;
     grid-row: 1/4;
     justify-self: start;
   }
