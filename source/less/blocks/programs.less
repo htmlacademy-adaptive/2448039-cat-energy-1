@@ -71,6 +71,7 @@
 .programs__description {
   margin: 0;
   margin-bottom: 38px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     max-width: 340px;
@@ -79,6 +80,21 @@
   @media (min-width: @desktop-width) {
     max-width: 457px;
   }
+}
+
+.programs__description::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -23px;
+  left: 0;
+  height: 1px;
+  background: #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+
 }
 
 .programs__link {

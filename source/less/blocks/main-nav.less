@@ -1,5 +1,9 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+  }
 }
 
 .main-nav__list {
@@ -7,9 +11,11 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 436px;
+    flex-grow: 1;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,6 +33,16 @@
   text-transform: uppercase;
   text-align: center;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+  }
 }
 
 .main-nav__link {
@@ -41,4 +57,20 @@
 
 .main-nav__link:active {
   opacity: 0.3;
+}
+
+.main-nav__item--current {
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: #68b738;
+    }
+  }
 }
