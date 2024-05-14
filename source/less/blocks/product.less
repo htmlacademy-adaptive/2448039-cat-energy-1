@@ -1,6 +1,17 @@
 .product {
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #ebebeb;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0 37px 40px 37px;
@@ -9,6 +20,16 @@
   @media (min-width: @desktop-width) {
     padding: 0 38px 40px 38px;
   }
+}
+
+.product:last-child::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #ebebeb;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .product__content {
@@ -63,6 +84,7 @@
   text-align: right;
 }
 
+//-all
 .product--all {
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
@@ -73,6 +95,22 @@
   flex-direction: column;
   padding-top: 78px;
   margin-bottom: 21px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    left: 124px;
+    top: 24px;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0 40px;
