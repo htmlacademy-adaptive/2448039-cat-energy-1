@@ -32,7 +32,7 @@
   }
 }
 
-.control__input[type="radio"]  {
+.control__input[type="radio"] {
   border-radius: 50%;
 }
 
@@ -63,4 +63,13 @@
   @media (min-width: @tablet-width) {
     background-position: left 10px center;
   }
+}
+
+.control__input:hover,
+.control__input:focus {
+  border: 1px solid #bababa;
+}
+
+.control__input:disabled {
+  opacity: 0.3;
 }
