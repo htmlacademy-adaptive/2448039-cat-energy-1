@@ -10,28 +10,12 @@
   gap: 40px;
   text-align: center;
   align-items: center;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    right: 0;
-    top: 44px;
-    height: 1px;
-    background: #d9d9d9;
-    box-shadow: 0 66px 0 0 #d9d9d9;
-  }
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     padding: 0 30px;
     flex-direction: row;
     justify-content: space-between;
-
-    &::after {
-      display: none;
-    }
   }
 
   @media (min-width: @desktop-width) {
