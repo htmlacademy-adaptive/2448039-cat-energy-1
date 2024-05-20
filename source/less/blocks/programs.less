@@ -148,7 +148,7 @@
     position: absolute;
     width: 24px;
     height: 12px;
-    background-image: url("../img/arrow-right.png");
+    background-image: url("../img/arrow-right.svg");
     background-repeat: no-repeat;
     right: -35px;
     top: 7px;
@@ -157,6 +157,10 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: 10px;
+    }
   }
 }
 
@@ -174,6 +178,8 @@
   @media (min-width: @tablet-width) {
     left: 480px;
     top: 70px;
+    width: 140px;
+    height: 194px;
   }
 
   @media (min-width: @desktop-width) {
@@ -196,6 +202,8 @@
   @media (min-width: @tablet-width) {
     left: 450px;
     top: 80px;
+    width: 268px;
+    height: 112px;
   }
 
   @media (min-width: @desktop-width) {
