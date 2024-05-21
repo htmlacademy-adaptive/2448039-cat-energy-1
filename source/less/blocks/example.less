@@ -3,15 +3,12 @@
   padding-top: 25px;
   padding-bottom: 40px;
 
+
   @media (min-width: @tablet-width) {
     padding-top: 45px;
     padding-bottom: 101px;
     background-color: @light;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 0;
-    padding-bottom: 75px;
+    border-top: 1px solid #e6e6e6;
     position: relative;
 
     &::before {
@@ -23,6 +20,12 @@
       bottom: 0;
       left: 0;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-bottom: 75px;
+    border-top: none;
   }
 }
 
@@ -89,7 +92,7 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 99px;
+    margin-bottom: 250px;
   }
 
   @media (min-width: @desktop-width) {
@@ -188,12 +191,12 @@
     max-width: 174px;
     font-size: 20px;
     text-align: right;
+    z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 436px;
     text-align: left;
-    z-index: 1;
   }
 }
 
@@ -207,11 +210,12 @@
 .example__slider {
   @media (min-width: @tablet-width) {
     text-align: center;
+    position: relative;
+    z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
     grid-row: 1/ -1;
     grid-column: 2/ 3;
-    z-index: 1;
   }
 }
