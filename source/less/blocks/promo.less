@@ -2,35 +2,57 @@
   padding-top: 27px;
   position: relative;
 
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 302px;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+  }
+
+  &::after {
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+
+  &::before {
+    background-image: url("../img/cat-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+  }
+
   @media (min-width: @tablet-width) {
     padding-top: 65px;
+
+    &::after,
+    &::before {
+      background: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 29px;
     padding-bottom: 170px;
-    overflow-x: hidden;
-  }
-}
+    position: static;
 
-.promo::before {
-  content: "";
-  position: absolute;
-  height: 302px;
-  width: 100%;
-  background-color: rgba(104, 183, 56, 0.85);
-  top: 0;
-  z-index: -1;
+    &::after,
+    &::before {
+      height: 694px;
+      width: 50%;
+      left: 50%;
+    }
 
-  @media (min-width: @tablet-width) {
-    background: none;
-  }
+    &::after {
+      background-color: rgba(104, 183, 56, 0.85);
+    }
 
-  @media (min-width: @desktop-width) {
-    background-color: rgba(104, 183, 56, 0.85);
-    height: 694px;
-    left: 720px;
-    top: -129px;
+    &::before {
+      background-image: url("../img/cat-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
