@@ -1,9 +1,54 @@
+.social {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    left: -74px;
+    width: 280px;
+    height: 1px;
+    background: #d9d9d9;
+  }
+
+  &::before {
+    bottom: 44px;
+  }
+
+  &::after {
+    top: 44px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
 .social__list {
   .list__reset;
   display: flex;
   justify-content: space-between;
+  width: 132px;
 }
 
 .social__link {
   text-decoration: none;
+}
+
+.social__link svg {
+  fill: #666666;
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: #68b738;
+}
+
+.social__link:active,
+.social__link:active svg {
+  fill: #68b738;
+  opacity: 0.3;
 }

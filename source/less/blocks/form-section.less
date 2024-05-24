@@ -1,26 +1,51 @@
+.form-section {
+  padding-top: 27px;
+  padding-bottom: 32px;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 74px;
+    padding-bottom: 79px;
+  }
+}
+
 .form-section__wrapper {
   .wrapper__size;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
-    padding: 0 30px;
-    margin: 0 40px;
+    padding: 0 70px;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 }
 
 .form-section__title {
-  margin-top: 27px;
+  margin-top: 0;
   margin-bottom: 37px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .form-section__intro {
@@ -29,11 +54,13 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
-}
+  margin-bottom: 39px;
 
-.form-section__form {
-  padding-top: 39px;
-  padding-bottom: 32px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-section__button {
@@ -57,6 +84,7 @@
     grid-template-columns: 284px auto;
     gap: 60px;
     justify-content: left;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {

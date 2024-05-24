@@ -1,3 +1,18 @@
+.main-header {
+  padding-top: 13px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 55px;
+  }
+}
+
 .main-header__wrapper {
   .wrapper__size;
 
@@ -11,7 +26,7 @@
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 }
 
@@ -19,7 +34,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 0;
+  margin-bottom: 15px;
 }
 
 .main-header__logo {
@@ -37,16 +52,78 @@
   }
 }
 
+.main-header__logo:hover,
+.main-header__logo:focus {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
+}
+
 .main-header__toggle {
-  width: 18px;
-  height: 18px;
-  background-image: url("../img/toggle-cross.svg");
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/toggle-opened.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: none;
   background-color: transparent;
+  border: none;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle:hover,
+.main-header__toggle:focus {
+  opacity: 0.6;
+}
+
+.main-header__toggle:active {
+  opacity: 0.3;
+}
+
+//--closed
+.main-header--closed {
+  &::after {
+    box-shadow: none;
+  }
+}
+
+.main-header--closed .main-header__toggle {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/toggle-opened.svg");
+}
+
+//--opened
+.main-header--opened .main-header__toggle {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/toggle-closed.svg");
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-header--closed .main-nav {
+    display: none;
+  }
+
+  .main-header--opened .main-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: @light;
+  }
+
+  .main-header--nojs .main-nav {
+    display: block;
+    position: static;
+  }
+
+  .main-header--nojs .main-header__toggle {
     display: none;
   }
 }
