@@ -11,8 +11,15 @@
       <div class="main-header__wrapper">
         <div class="main-header__container">
           <a class="main-header__logo logo" href="index.html">
-            <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
-            <img class="logo__text" src="img/logo-text-header.svg" width="101" height="18" alt="Кэт энерджи">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+              <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo/logotext-tablet.svg">
+              <img class="logo__text" src="img/logo/logotext-mobile.svg" width="101" height="18" alt="Кэт энерджи">
+            </picture>
           </a>
           <button class="main-header__toggle" type="button">
             <span class="visually-hidden"> Открыть меню</span>
@@ -39,7 +46,13 @@
           <h1 class="visually-hidden">Кэт энерджи</h1>
           <h2 class="promo__title"> Функциональное питание для котов</h2>
           <p class="promo__slogan"> Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="img/index-background.png" width="280" height="270" alt="Орнажевая упаковка питания для котов серии Cat Energy Pro со вкусом курицы">
+          <div class="promo__image-wrapper">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/promo/promo-desktop.png 1x, img/promo/promo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/promo/promo-tablet.png 1x, img/promo/promo-tablet@2x.png 2x">
+              <img class="promo__image" src="img/promo/promo-mobile.png" width="280" height="270" srcset="img/promo/promo-mobile@2x.png 2x" alt="Орнажевая упаковка питания для котов серии Cat Energy Pro со вкусом курицы">
+            </picture>
+          </div>
           <a class="promo__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
