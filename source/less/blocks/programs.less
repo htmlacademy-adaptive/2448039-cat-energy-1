@@ -134,6 +134,7 @@
 }
 
 .programs__link {
+  padding-right: 15px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -146,22 +147,34 @@
   &::after {
     content: "";
     position: absolute;
-    width: 24px;
-    height: 12px;
-    background-image: url("../img/arrow-right.svg");
+    width: 32px;
+    height: 10px;
+    background-image: url("../img/programs/arrow-default.svg");
     background-repeat: no-repeat;
-    right: -35px;
+    right: -20px;
     top: 7px;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-right: 25px;
 
     &::after {
       top: 10px;
     }
   }
+}
+
+.programs__link:hover,
+.programs__link:focus {
+  &::after {
+    background-image: url("../img/programs/arrow-hover.svg");
+  }
+}
+
+.programs__link:active {
+  opacity: 0.3;
 }
 
 //--slim
@@ -170,7 +183,7 @@
   position: absolute;
   width: 36px;
   height: 50px;
-  background-image: url("../img/cat-slim.svg");
+  background-image: url("../img/programs/cat-slim.svg");
   background-repeat: no-repeat;
   background-size: cover;
   left: -80px;
@@ -197,7 +210,7 @@
   position: absolute;
   width: 67px;
   height: 28px;
-  background-image: url("../img/cat-pro.svg");
+  background-image: url("../img/programs/cat-pro.svg");
   background-repeat: no-repeat;
   background-size: cover;
   left: -100px;

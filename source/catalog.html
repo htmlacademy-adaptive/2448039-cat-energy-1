@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header main-header--closed main-header--nojs">
       <div class="main-header__wrapper">
         <div class="main-header__container">
           <a class="main-header__logo logo" href="index.html">
-            <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
-            <img class="logo__text" src="img/logo-text-header.svg" width="101" height="18" alt="Кэт энерджи">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+              <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo/logotext-tablet.svg">
+              <img class="logo__text" src="img/logo/logotext-mobile.svg" width="101" height="18" alt="Кэт энерджи">
+            </picture>
           </a>
           <button class="main-header__toggle" type="button">
             <span class="visually-hidden"> Открыть меню</span>
@@ -41,7 +52,13 @@
             <ul class="catalog__list">
               <li class="catalog__item product">
                 <div class="product__content">
-                  <img class="product__image" src="img/product/card-1.png" width="140" height="107" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
+                  <div class="product__image-wrapper">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/product/card-desktop1.png 1x, img/product/card-desktop1@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/product/card-tablet1.png 1x, img/product/card-tablet1@2x.png 2x">
+                      <img class="product__image" src="img/product/card-mobile1.png" width="140" height="107" srcset="img/product/card-mobile1@2x.png 2x" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
+                    </picture>
+                  </div>
                   <div class="product__price">
                     <h3 class="product__title"> Cat Energy PRO 500 г</h3>
                     <table class="product__info">
@@ -64,7 +81,13 @@
               </li>
               <li class="catalog__item product">
                 <div class="product__content">
-                  <img class="product__image" src="img/product/card-2.png" width="140" height="107" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
+                  <div class="product__image-wrapper">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/product/card-desktop2.png 1x, img/product/card-desktop2@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/product/card-tablet2.png 1x, img/product/card-tablet2@2x.png 2x">
+                      <img class="product__image" src="img/product/card-mobile2.png" width="140" height="107" srcset="img/product/card-mobile2@2x.png 2x" alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы">
+                    </picture>
+                  </div>
                   <div class="product__price">
                     <h3 class="product__title"> Cat Energy PRO 1000 г</h3>
                     <table class="product__info">
@@ -87,7 +110,14 @@
               </li>
               <li class="catalog__item product">
                 <div class="product__content">
-                  <img class="product__image" src="img/product/card-3.png" width="140" height="107" alt="Зеленая упаковка Cat Energy PRO со вкусом рыбы">
+                  <div class="product__image-wrapper">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/product/card-desktop3.png 1x, img/product/card-desktop3@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/product/card-tablet3.png 1x, img/product/card-tablet3@2x.png 2x">
+                      <img class="product__image" src="img/product/card-mobile3.png" width="140" height="107" srcset="img/product/card-mobile3@2x.png 2x" alt="Зеленая упаковка Cat Energy PRO со вкусом рыбы">
+                    </picture>
+                  </div>
+
                   <div class="product__price">
                     <h3 class="product__title"> Cat Energy PRO 500 г</h3>
                     <table class="product__info">
@@ -110,7 +140,13 @@
               </li>
               <li class="catalog__item product">
                 <div class="product__content">
-                  <img class="product__image" src="img/product/card-4.png" width="140" height="107" alt="Зеленая упаковка Cat Energy PRO со вкусом рыбы">
+                  <div class="product__image-wrapper">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/product/card-desktop4.png 1x, img/product/card-desktop4@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/product/card-tablet4.png 1x, img/product/card-tablet4@2x.png 2x">
+                      <img class="product__image" src="img/product/card-mobile4.png" width="140" height="107" srcset="img/product/card-mobile4@2x.png 2x" alt="Зеленая упаковка Cat Energy PRO со вкусом рыбы">
+                    </picture>
+                  </div>
                   <div class="product__price">
                     <h3 class="product__title"> Cat Energy PRO 1000 г</h3>
                     <table class="product__info">
@@ -133,7 +169,13 @@
               </li>
               <li class="catalog__item product">
                 <div class="product__content">
-                  <img class="product__image" src="img/product/card-5.png" width="140" height="107" alt="Синяя упаковка Cat Energy SLIM со вкусом гречки">
+                  <div class="product__image-wrapper">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/product/card-desktop5.png 1x, img/product/card-desktop5@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/product/card-tablet5.png 1x, img/product/card-tablet5@2x.png 2x">
+                      <img class="product__image" src="img/product/card-mobile5.png" width="140" height="107" srcset="img/product/card-mobile5@2x.png 2x" alt="Синяя упаковка Cat Energy SLIM со вкусом гречки">
+                    </picture>
+                  </div>
                   <div class="product__price">
                     <h3 class="product__title"> Cat Energy SLIM 500 г</h3>
                     <table class="product__info">
@@ -156,7 +198,13 @@
               </li>
               <li class="catalog__item product">
                 <div class="product__content">
-                  <img class="product__image" src="img/product/card-6.png" width="140" height="107" alt="Синяя упаковка Cat Energy SLIM со вкусом гречки">
+                  <div class="product__image-wrapper">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/product/card-desktop6.png 1x, img/product/card-desktop6@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/product/card-tablet6.png 1x, img/product/card-tablet6@2x.png 2x">
+                      <img class="product__image" src="img/product/card-mobile6.png" width="140" height="107" srcset="img/product/card-mobile6@2x.png 2x" alt="Синяя упаковка Cat Energy SLIM со вкусом гречки">
+                    </picture>
+                  </div>
                   <div class="product__price">
                     <h3 class="product__title"> Cat Energy SLIM 1000 г</h3>
                     <table class="product__info">
@@ -179,7 +227,13 @@
               </li>
               <li class="catalog__item product">
                 <div class="product__content">
-                  <img class="product__image" src="img/product/card-7.png" width="140" height="107" alt="Сиреневая упаковка Cat Energy SLIM со вкусом риса">
+                  <div class="product__image-wrapper">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/product/card-desktop7.png 1x, img/product/card-desktop7@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/product/card-tablet7.png 1x, img/product/card-tablet7@2x.png 2x">
+                      <img class="product__image" src="img/product/card-mobile7.png" width="140" height="107" srcset="img/product/card-mobile7@2x.png 2x" alt="Сиреневая упаковка Cat Energy SLIM со вкусом риса">
+                    </picture>
+                  </div>
                   <div class="product__price">
                     <h3 class="product__title"> Cat Energy <br> SLIM 500 г</h3>
                     <table class="product__info">
