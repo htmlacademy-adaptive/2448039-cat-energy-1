@@ -169,15 +169,29 @@
   }
 }
 
-.form__group--owner svg {
-  width: 20px;
-  height: 20px;
+.form__group--owner .form__content:not(:last-child) {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__group--owner .form__icon {
   position: relative;
   right: 30px;
 }
 
+.form__icon,
+.form__icon:hover {
+  fill: #ffffff;
+}
+
+.form__icon:focus,
+.form__icon:active {
+  stroke: #68b738;
+}
+
 .form__group--owner .form__field {
-  padding-right: 20px;
+  padding-right: 35px;
   background-repeat: no-repeat;
   background-position: right 12px center;
 
@@ -185,7 +199,6 @@
     background-position: right 16px center;
   }
 }
-
 
 //--comments
 .form__group--comments {
