@@ -59,7 +59,7 @@ const optimizeImages = () => {
 
 // Server
 
-const server = (done) => {
+const server = (done) => {gi
   browser.init({
     server: {
       baseDir: 'source'
