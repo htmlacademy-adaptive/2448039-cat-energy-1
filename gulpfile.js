@@ -43,9 +43,9 @@ const optimizeImages = () => {
   .pipe(gulp.dest('build/img'));
 }
 
- const copyImages = () => {
-    return gulp.src('source/img/**/*. {jpg,png}')
-    .pipe(gulp.dest('build/img'));
+const copyImages = () => {
+  return gulp.src('source/img/**/*. {jpg,png}')
+  .pipe(gulp.dest('build/img'));
 }
 
 //WebP
