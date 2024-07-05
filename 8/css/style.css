@@ -2123,8 +2123,8 @@
 .form__group--owner .form__content--email::after {
   content: "";
   position: absolute;
-  -webkit-mask: url("../img/stack.svg#icon-email");
-          mask: url("../img/stack.svg#icon-email");
+  -webkit-mask-image: url("../img/stack.svg#icon-email");
+          mask-image: url("../img/stack.svg#icon-email");
   background-color: #222222;
   width: 20px;
   height: 20px;
@@ -2143,8 +2143,8 @@
 .form__group--owner .form__content--phone::after {
   content: "";
   position: absolute;
-  -webkit-mask: url("../img/stack.svg#icon-phone");
-          mask: url("../img/stack.svg#icon-phone");
+  -webkit-mask-image: url("../img/stack.svg#icon-phone");
+          mask-image: url("../img/stack.svg#icon-phone");
   background-color: #222222;
   width: 20px;
   height: 20px;
