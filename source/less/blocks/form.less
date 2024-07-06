@@ -181,12 +181,21 @@
   &::after {
     content: "";
     position: absolute;
-    mask: url("../img/sprite.svg#icon-email");
-    background-color: #000000;
+    mask-image: url("../img/stack.svg#icon-email");
+    background-color: #222222;
     width: 20px;
     height: 20px;
     right: 30px;
   }
+}
+
+.form__content--email:hover::after {
+  background-color: #222222;
+}
+
+.form__content--email:focus::after,
+.form__content--email:active::after {
+  background-color: #68b738;
 }
 
 .form__group--owner .form__content--phone {
@@ -195,7 +204,7 @@
   &::after {
     content: "";
     position: absolute;
-    mask: url("../img/sprite.svg#icon-phone");
+    mask-image: url("../img/stack.svg#icon-phone");
     background-color: #222222;
     width: 20px;
     height: 20px;
@@ -209,7 +218,7 @@
 
 .form__content--phone:focus::after,
 .form__content--phone:active::after {
-  fill: #68b738;
+  background-color: #68b738;
 }
 
 .form__group--owner .form__field {
