@@ -11,6 +11,7 @@ import svgstore from 'gulp-svgstore';
 import svgo from 'gulp-svgmin';
 import { deleteAsync } from 'del';
 import squoosh from 'gulp-libsquoosh';
+import csso from 'postcss-csso';
 
 // Styles
 
@@ -19,8 +20,10 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
