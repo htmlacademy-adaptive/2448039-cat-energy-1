@@ -1,13 +1,17 @@
 .main-footer {
   background-color: @dark;
   padding: 40px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 0;
+  }
 }
 
 .main-footer__wrapper {
   .wrapper__size;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 38px;
   text-align: center;
   align-items: center;
 
@@ -15,12 +19,19 @@
     width: @tablet-width;
     padding: 0 30px;
     flex-direction: row;
-    justify-content: space-between;
+
+    gap: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
     padding: 0 40px;
+  }
+}
+
+.main-footer__logo {
+  @media (min-width: @tablet-width) {
+   margin-right: 160px;
   }
 }
 
@@ -31,4 +42,10 @@
 
 .main-footer__logo:active svg {
   fill: #6b6b6b;
+}
+
+.main-footer__copyright {
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+   }
 }

@@ -36,7 +36,7 @@ const html = () => {
 }
 
 //scripts
-export const scripts = () => {
+const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'));
@@ -147,6 +147,7 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     svg,
     sprite,
     createWebp
