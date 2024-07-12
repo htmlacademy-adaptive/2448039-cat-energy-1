@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  padding: 20px 0 25px 0;
+  padding: 20px 0 28px 0;
 
   &::before,
   &::after {
@@ -52,19 +52,18 @@
 
 .product__content {
   display: flex;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom: 27px;
   }
 }
 
 .product__image-wrapper {
-  align-self: center;
-
   @media (min-width: @tablet-width) {
     margin-bottom: 22px;
+    align-self: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,6 +78,7 @@
   @media (min-width: @tablet-width) {
     width: 200px;
     height: 210px;
+    padding-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -98,7 +98,7 @@
   margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto 20px auto;
+    margin: 0 auto 15px auto;
     text-align: center;
     max-width: 135px;
     font-size: 20px;
@@ -108,6 +108,7 @@
 
 .product__info {
   width: 140px;
+  border-spacing: 1px;
 
   @media (min-width: @tablet-width) {
     width: 250px;
@@ -120,6 +121,8 @@
 }
 
 .product__info tr {
+  border-spacing: 5px;
+
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid #cdcdcd;
   }
@@ -152,6 +155,8 @@
 
 //-all
 .product--all {
+  padding: 10px 0 38px 0;
+
   @media (min-width: @tablet-width) {
     border: 2px solid #f2f2f2;
     margin-top: 80px;
@@ -169,8 +174,8 @@
 
 .product--all .product__content {
   flex-direction: column;
-  padding-top: 78px;
-  margin-bottom: 21px;
+  padding-top: 62px;
+  margin-bottom: 20px;
   position: relative;
 
   &::before,
@@ -195,8 +200,8 @@
     &::before,
     &::after {
       width: 60px;
-      left: 94px;
-      top: -90px;
+      left: 130px;
+      top: -80px;
     }
   }
 
@@ -220,6 +225,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 23px;
+    max-width: 135px;
   }
 }
 
@@ -232,13 +238,17 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 18px;
+    max-width: 170px;
+    margin: 0 auto;
   }
 }
 
 .product--all .product__button {
   color: #444444;
   background-color: @dark;
-  min-width: max-content;
+  width: 250px;
+  box-sizing: border-box;
+  align-self: center;
 }
 
 .product--all .product__button:hover,
