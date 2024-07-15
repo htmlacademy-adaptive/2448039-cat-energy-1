@@ -72,6 +72,11 @@
     border: 1px solid #e7e7e7;
     padding: 23px 0 27px 27px;
   }
+
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .form__item:not(:last-child) {
@@ -189,8 +194,8 @@
     margin-bottom: 64px;
    }
 
-
   @media (min-width: @desktop-width) {
+    margin-bottom: 74px;
     display: flex;
     justify-content: space-between;
   }
@@ -230,6 +235,12 @@
     height: 20px;
     right: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      right: 15px;
+    }
+  }
 }
 
 .form__content--email:hover::after {
@@ -252,6 +263,12 @@
     width: 20px;
     height: 20px;
     right: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      right: 15px;
+    }
   }
 }
 
@@ -276,6 +293,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 70px;
   }
 }
 
@@ -311,6 +332,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 88px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 74px;
+  }
 }
 
 //--additional
@@ -336,8 +361,9 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, auto);
-    margin-right: 85px;
-    padding-left: 0;
+    justify-content: space-between;
+    padding: 22px 0 46px 0;
+    margin-right: 95px;
   }
 }
 
