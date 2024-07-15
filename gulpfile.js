@@ -93,7 +93,7 @@ const sprite = () => {
 }
 
 //Clean
-const clean = () => {
+export const clean = () => {
   return deleteAsync('build');
 };
 
