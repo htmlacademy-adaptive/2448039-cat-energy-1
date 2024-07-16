@@ -142,7 +142,6 @@
     font-size: 20px;
     line-height: 26px;
     width: 244px;
-    height: 54px;
     box-sizing: border-box;
     z-index: 2;
     grid-column: 2/3;
@@ -168,6 +167,9 @@
 }
 
 .promo__image {
+  width: 280px;
+  height: 270px;
+
   @media (min-width: @tablet-width) {
     width: 709px;
     height: 609px;
@@ -176,6 +178,7 @@
   @media (min-width: @desktop-width) {
     width: 552px;
     height: 499px;
+    max-width: none;
   }
 }
 
