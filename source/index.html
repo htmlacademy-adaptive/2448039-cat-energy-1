@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href= "fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href= "fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -120,7 +120,10 @@
           </div>
           <div class="example__slider slider">
             <div class="slider__before">
-              <img class="slider__image-before" src="img/slide-before-mobile.png" width="280" height="256" alt="Упитанный пушистый серый котик">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-tablet.png 1x, img/cat-tablet@2x.png 2x">
+                <img class="slider__image-before" src="img/cat-mobile.png" width="280" height="256" srcset="img/cat-mobile@2x.png 2x" alt="Упитанный пушистый серый котик">
+              </picture>
             </div>
           </div>
         </div>
@@ -129,7 +132,7 @@
         <div class="contacts__wrapper">
           <div class="contacts__content">
             <h2 class="visually-hidden"> Контакты</h2>
-            <b class="contacts__invite"> Приглашаем к сотрудничеству дилеров! </b>
+            <b class="contacts__invite"> Приглашаем <br> к сотрудничеству дилеров! </b>
             <div class="contacts__container">
               <p class="contacts__address"> ул. Большая Конюшенная, д. 19/8 </p>
               <p class="contacts__city">Санкт-Петербург </p>
@@ -151,7 +154,7 @@
       <div class="main-footer__wrapper">
         <a class="main-footer__logo" href="index.html">
           <span class="visually-hidden">Кэт энерджи </span>
-          <svg width="101" height="18" fill="#111111">
+          <svg width="128" height="24" fill="#111111">
             <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
         </a>
