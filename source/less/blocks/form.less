@@ -18,7 +18,7 @@
 }
 
 .form__content:not(:last-child) {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .form__label,
@@ -65,10 +65,6 @@
   outline: 2px solid #444444;
 }
 
-input:focus:invalid {
-  outline: 2px solid #ff8282;
-}
-
 .form__list {
   .list__reset;
 
@@ -84,7 +80,7 @@ input:focus:invalid {
 }
 
 .form__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .form__legend {
@@ -97,6 +93,7 @@ input:focus:invalid {
   position: relative;
   display: inline-block;
   background-color: #ffffff;
+  padding-left: 0;
   padding-right: 20px;
 
   &::before {
@@ -108,7 +105,7 @@ input:focus:invalid {
     background: #68b738;
     bottom: -24px;
     left: 0;
-    top: 18px;
+    top: 15px;
     z-index: -1;
   }
 
@@ -127,7 +124,7 @@ input:focus:invalid {
       width: 800%;
       height: 2px;
       background: #68b738;
-      top: 18px;
+      top: 22px;
       z-index: -1;
     }
 
@@ -173,10 +170,10 @@ input:focus:invalid {
 
 //--program
 .form__group--program {
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: @desktop-width) {
@@ -366,7 +363,7 @@ input:focus:invalid {
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 265px);
     justify-content: space-between;
     padding: 22px 0 46px 0;
     margin-right: 95px;
@@ -391,7 +388,7 @@ input:focus:invalid {
     width: 800%;
     height: 1px;
     background: #d9d9d9;
-    bottom: -24px;
+    bottom: -20px;
     right: 0;
   }
 
@@ -406,3 +403,21 @@ input:focus:invalid {
     }
   }
 }
+
+//error
+.form__error {
+  display: none;
+}
+
+.form__error .form__field {
+  outline: 2px solid #ff8282;
+}
+
+/*
+.form__group--owner .form__content--email {
+
+  &::after {
+    background-color: #ff8282;
+  }
+}
+*/
