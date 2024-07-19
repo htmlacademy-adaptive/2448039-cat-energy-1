@@ -65,8 +65,13 @@
   }
 }
 
+.product__price {
+  text-align: center;
+}
+
 .product__link {
   text-decoration: none;
+  display: inline-block;
 
   @media (min-width: @tablet-width) {
     align-self: center;
@@ -75,6 +80,11 @@
 
 .product__link:hover {
   opacity: 0.6;
+}
+
+.product__link:focus {
+  opacity: 0.6;
+  outline: 2px solid #000000;
 }
 
 .product__link:active {
@@ -130,6 +140,7 @@
 .product__info {
   width: 140px;
   border-spacing: 1px;
+  text-align: start;
 
   @media (min-width: @tablet-width) {
     width: 250px;
