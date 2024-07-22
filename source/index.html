@@ -119,13 +119,33 @@
             <b class="example__total"> Затраты на питание: <span class="example__price"> 15 000 руб.</span> </b>
           </div>
           <div class="example__slider slider">
-            <div class="slider__before">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-tablet.webp 1x, img/cat-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/cat-mobile.webp 1x, img/cat-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/cat-tablet.png 1x, img/cat-tablet@2x.png 2x">
-                <img class="slider__image-before" src="img/cat-mobile.png" width="280" height="256" srcset="img/cat-mobile@2x.png 2x" alt="Упитанный пушистый серый котик">
-              </picture>
+            <ul class="example__list-picture slider__list">
+              <li class="example__item-picture slider__item slider__item--before" style="left: 50%; width: 50%;">
+                <div class="slider__box slider__box--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat/before-tablet.webp 1x, img/cat/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cat/before-mobile.webp 1x, img/cat/before-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/cat/before-tablet.png 1x, img/cat/before-tablet@2x.png 2x">
+                    <img class="slider__image-before" src="img/cat/before-mobile.png" width="280" height="256" srcset="img/cat/before-mobile@2x.png 2x" alt="Упитанный пушистый серый котик">
+                  </picture>
+                </div>
+              </li>
+              <li class="example__item-picture slider__item slider__item--after slider__item--current" style="left: 50%; width: 50%;">
+                <div class="slider__box slider__box--after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat/after-tablet.webp 1x, img/cat/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cat/after-mobile.webp 1x, img/cat/after-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/cat/after-tablet.png 1x, img/cat/after-tablet@2x.png 2x">
+                    <img class="slider__image-after" src="img/cat/after-mobile.png" width="280" height="256" srcset="img/cat/after-mobile@2x.png 2x" alt="Худой короткошерстый серый котик">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+            <div class="slider__button">
+              <span class="visually-hidden"> Сдвинуть слайдер </span>
+              <svg width="40" height="258" fill="#666666">
+                <use xlink:href="img/sprite.svg#slider"></use>
+              </svg>
             </div>
           </div>
         </div>

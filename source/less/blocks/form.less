@@ -73,14 +73,13 @@
     padding: 23px 0 27px 27px;
   }
 
-
   @media (min-width: @desktop-width) {
     padding-bottom: 20px;
   }
 }
 
 .form__item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .form__legend {
@@ -182,8 +181,11 @@
 }
 
 .form__group--program .control__label {
+  padding-right: 10px;
+
   @media (min-width: @tablet-width) {
     padding-left: 60px;
+    padding-right: 20px;
   }
 }
 
@@ -198,6 +200,8 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 74px;
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
     justify-content: space-between;
   }
 }
@@ -357,19 +361,25 @@
 
 .form__group--additional .form__list {
   @media (min-width: @tablet-width) {
-    padding: 22px 0 38px 0;
+    padding: 22px 0 48px 0;
     display: grid;
     grid-template-columns: 284px auto;
     gap: 60px;
-    row-gap: 18px;
+    row-gap: 30px;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 265px);
     justify-content: space-between;
-    padding: 22px 0 46px 0;
+    padding: 22px 0 60px 0;
     margin-right: 95px;
+  }
+}
+
+.form__group--additional .form__item {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 }
 
