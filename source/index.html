@@ -96,7 +96,7 @@
               <p class="advantages__description"> Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="advantages__item advantages__item--time">
-              <p class="advantages__description"> Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
+              <p class="advantages__description"> Уже через месяц наслаждайтесь изменениями к лучшему <br> &nbsp;вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -109,21 +109,46 @@
             <dl class="example__list">
               <div class="example__item">
                 <dt class="example__size"> 5 кг</dt>
-                <dd class="example__description">снижение <br>веса</dd>
+                <dd class="example__description">снижение <br> &nbsp;веса</dd>
               </div>
               <div class="example__item">
                 <dt class="example__size"> 60 дней</dt>
-                <dd class="example__description">затрачено<br> времени</dd>
+                <dd class="example__description">затрачено<br> &nbsp;времени</dd>
               </div>
             </dl>
             <b class="example__total"> Затраты на питание: <span class="example__price"> 15 000 руб.</span> </b>
           </div>
           <div class="example__slider slider">
-            <div class="slider__before">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-tablet.png 1x, img/cat-tablet@2x.png 2x">
-                <img class="slider__image-before" src="img/cat-mobile.png" width="280" height="256" srcset="img/cat-mobile@2x.png 2x" alt="Упитанный пушистый серый котик">
-              </picture>
+            <ul class="example__list-picture slider__list">
+              <li class="example__item-picture slider__item slider__item--before" style="left: 50%; width: 50%;">
+                <div class="slider__box slider__box--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat/before-tablet.webp 1x, img/cat/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cat/before-mobile.webp 1x, img/cat/before-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/cat/before-tablet.png 1x, img/cat/before-tablet@2x.png 2x">
+                    <img class="slider__image-before" src="img/cat/before-mobile.png" width="280" height="256" srcset="img/cat/before-mobile@2x.png 2x" alt="Упитанный пушистый серый котик">
+                  </picture>
+                </div>
+              </li>
+              <li class="example__item-picture slider__item slider__item--after slider__item--current" style="left: 50%; width: 50%;">
+                <div class="slider__box slider__box--after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat/after-tablet.webp 1x, img/cat/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cat/after-mobile.webp 1x, img/cat/after-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/cat/after-tablet.png 1x, img/cat/after-tablet@2x.png 2x">
+                    <img class="slider__image-after" src="img/cat/after-mobile.png" width="280" height="256" srcset="img/cat/after-mobile@2x.png 2x" alt="Худой короткошерстый серый котик">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+            <div class="slider__button">
+              <span class="visually-hidden"> Сдвинуть слайдер </span>
+              <svg width="40" height="258" viewBox="0 0 40 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
+                <rect x="1" y="110" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+                <path d="M16 120L8 129L16 138V120Z" fill="#666666"/>
+                <path d="M32 129L24 120V138L32 129Z" fill="#666666"/>
+              </svg>
             </div>
           </div>
         </div>
@@ -146,6 +171,16 @@
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </iframe>
+          <noscript>
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/maps-desktop.webp 1x, img/maps-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/maps-tablet.webp 1x, img/maps-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/maps-mobile.webp 1x, img/maps-mobile@2x.webp 2x">
+              <source media ="(min-width: 1300px)" srcset="img/maps-desktop.jpg 1x, img/maps-desctop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/maps-tablet.jpg 1x, img/maps-tablet@2x.jpg 2x">
+              <img class="contacts__image" src="img/maps-mobile.jpg" width="320" height="362" srcset="img/maps-mobile@2x.jpg 2x" alt="Cat Energy на карте.">
+            </picture>
+          </noscript>
         </div>
       </section>
     </main>

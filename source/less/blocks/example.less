@@ -1,12 +1,12 @@
 .example {
   background-color: @darkgrey;
   padding-top: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 
 
   @media (min-width: @tablet-width) {
     padding-top: 45px;
-    padding-bottom: 202px;
+    padding-bottom: 101px;
     background-color: @light;
     border-top: 1px solid #e6e6e6;
     position: relative;
@@ -59,7 +59,7 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
@@ -88,12 +88,12 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 250px;
+    margin-bottom: 99px;
     align-items: center;
   }
 
@@ -211,8 +211,15 @@
   }
 }
 
+.example__list-picture {
+  .list__reset;
+}
+
 .example__slider {
+  height: 256px;
+
   @media (min-width: @tablet-width) {
+    height: 512px;
     text-align: center;
     position: relative;
     z-index: 1;

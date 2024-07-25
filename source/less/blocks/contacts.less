@@ -82,6 +82,10 @@
   }
 }
 
+.contacts__maps {
+  position: relative;
+}
+
 .contacts__location {
   display: block;
   border: none;
@@ -91,6 +95,15 @@
   @media (min-width: @tablet-width) {
     height: 400px;
   }
+}
+
+.contacts__image {
+  position: absolute;
+  content: "";
+  top: 0;
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
 }
 
 .contacts--dark {
