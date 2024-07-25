@@ -71,9 +71,28 @@
 .slider__button {
   position: absolute;
   left: 120px;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 256px;
+    border-radius: 2px;
+    background-color: #666666;
+    left: 18px;
+    z-index: -2;
+  }
 
   @media (min-width: @tablet-width) {
     left: 335px;
+    top: 129px;
+
+    &::after {
+      height: 512px;
+      left: 17px;
+      top: -127px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -81,18 +100,32 @@
   }
 }
 
-.slider__curtain {
-  @media (min-width: @tablet-width) {
-    height: 512px;
-  }
+.slider__button:hover::after,
+.slider__button:focus::after {
+  background-color: #68b738;
 }
 
-.slider__button:hover svg,
-.slider__button:focus svg {
+.slider__button:active::after {
+  background-color: #68b738;
+  opacity: 0.6;
+}
+
+.slider__button:hover svg path,
+.slider__button:focus svg path {
   fill: #68b738;
 }
 
-.slider__button:active svg {
+.slider__button:hover svg rect,
+.slider__button:focus svg rect {
+  stroke: #68b738;
+}
+
+.slider__button:active svg path {
   fill: #68b738;
+  opacity: 0.6;
+}
+
+.slider__button:active svg rect {
+  stroke: #68b738;
   opacity: 0.6;
 }
