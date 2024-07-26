@@ -52,6 +52,8 @@
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
   appearance: none;
+  -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .form__field::placeholder {
@@ -190,6 +192,10 @@
   }
 }
 
+.form__group--program .form__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
 //--owner
 .form__group--owner {
   margin-bottom: 24px;
@@ -300,7 +306,7 @@
 
 //--comments
 .form__group--comments {
-  margin-bottom: 15px;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 64px;
@@ -312,17 +318,23 @@
 }
 
 .form__group--comments .form__text {
-  padding: 0;
   border: 1px solid #e7e7e7;
   width: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 20px;
+    padding: 0;
+    padding-bottom: 28px;
   }
 }
 
 .form__text::placeholder {
-  padding: 12px;
+  padding: 13px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -362,7 +374,7 @@
 
 .form__group--additional .form__list {
   @media (min-width: @tablet-width) {
-    padding: 22px 0 48px 0;
+    padding: 22px 0 53px 0;
     display: grid;
     grid-template-columns: 284px auto;
     gap: 60px;
@@ -378,7 +390,9 @@
   }
 }
 
-.form__group--additional .form__item {
+.form__group--additional .form__item:not(:last-child) {
+    margin-bottom: 12px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
