@@ -12,7 +12,6 @@
     <link rel="preload" href= "fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href= "fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
-  </head>
   <body class="page__body">
     <header class="main-header main-header--closed main-header--nojs">
       <div class="main-header__wrapper">
@@ -32,7 +31,7 @@
             <span class="visually-hidden"> Открыть меню</span>
           </button>
         </div>
-        <nav class="main-nav">
+        <nav class="main-header__main-nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -78,19 +77,19 @@
                   <li class="form__item">
                     <label class="form__control control">
                       <input class="control__input" type="radio" name="type-program" value="type-slim" checked>
-                      <span class="control__label"> Похудение</span>
+                      <span class="control__label form__control-label"> Похудение</span>
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__control control">
                       <input class="control__input" type="radio" name="type-program" value="type-pro">
-                      <span class="control__label"> Набор массы</span>
+                      <span class="control__label form__control-label"> Набор массы</span>
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__control control">
                       <input class="control__input" type="radio" name="type-program" value="type-unknown">
-                      <span class="control__label"> Не знаю (Нужен ваш совет)</span>
+                      <span class="control__label form__control-label"> Не знаю (Нужен ваш совет)</span>
                     </label>
                   </li>
                 </ul>
@@ -105,13 +104,13 @@
               </div>
               <div class="form__content form__content--phone">
                 <label class="form__label" for="owner-phone"> Телефон:<sup>*</sup></label>
-                <input class="form__field" type="text" id="owner-phone" value="8 (960) 900-60-90" placeholder="Ваш телефон" required>
+                <input class="form__field" type="tel" id="owner-phone" value="8 (960) 900-60-90" placeholder="Ваш телефон" required>
                 <!-- При ошибке валидации добавить к классу .form__content класс .form__error -->
               </div>
             </fieldset>
             <fieldset class="form__group form__group--comments">
               <legend class="form__legend"> Комментарий</legend>
-              <textarea class="form__text" name="comment" id="comment-field" rows="10" cols="37" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form__text" name="comment" id="comment-field" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form__group form__group--additional">
               <legend class="form__legend"> Дополнительно </legend>
@@ -119,25 +118,25 @@
                 <li class="form__item">
                   <label class="form__control control">
                     <input class="control__input" type="checkbox" name="sweetener" checked>
-                    <span class="control__label"> Сахарозаменитель</span>
+                    <span class="control__label form__control-label"> Сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control control">
                     <input class="control__input" type="checkbox" name="water">
-                    <span class="control__label"> Питьевая вода</span>
+                    <span class="control__label form__control-label"> Питьевая вода</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control control">
                     <input class="control__input" type="checkbox" name="milk">
-                    <span class="control__label"> Молоко</span>
+                    <span class="control__label form__control-label"> Молоко</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control control">
                     <input class="control__input" type="checkbox" name="vitamins">
-                    <span class="control__label"> Витамины</span>
+                    <span class="control__label form__control-label"> Витамины</span>
                   </label>
                 </li>
               </ul>

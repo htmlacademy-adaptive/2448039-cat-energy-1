@@ -51,7 +51,7 @@
   padding: 10px 13px;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
-  appearance: none;
+  appearance: textfield;
 }
 
 .form__field::placeholder {
@@ -181,13 +181,17 @@
   }
 }
 
-.form__group--program .control__label {
+.form__group--program .form__control-label {
   padding-right: 10px;
 
   @media (min-width: @tablet-width) {
     padding-left: 60px;
     padding-right: 20px;
   }
+}
+
+.form__group--program .form__item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 //--owner
@@ -300,7 +304,7 @@
 
 //--comments
 .form__group--comments {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 64px;
@@ -312,17 +316,28 @@
 }
 
 .form__group--comments .form__text {
-  padding: 0;
   border: 1px solid #e7e7e7;
   width: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+  padding: 15px 10px 10px 15px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 20px;
+    padding: 10px 10px 10px 20px;
+    height: 173px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 10px 10px 17px;
   }
 }
 
 .form__text::placeholder {
-  padding: 12px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -333,7 +348,6 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 20px;
   }
 }
 
@@ -362,7 +376,7 @@
 
 .form__group--additional .form__list {
   @media (min-width: @tablet-width) {
-    padding: 22px 0 48px 0;
+    padding: 22px 0 50px 0;
     display: grid;
     grid-template-columns: 284px auto;
     gap: 60px;
@@ -378,13 +392,15 @@
   }
 }
 
-.form__group--additional .form__item {
+.form__group--additional .form__item:not(:last-child) {
+  margin-bottom: 12px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
 }
 
-.form__group--additional .control__label {
+.form__group--additional .form__control-label {
   @media (min-width: @tablet-width) {
     padding-left: 60px;
   }
