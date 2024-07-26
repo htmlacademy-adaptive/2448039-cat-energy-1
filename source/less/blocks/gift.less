@@ -6,9 +6,9 @@
     content: "";
     position: absolute;
     width: 280px;
-    height: 290px;
+    height: 100%;
     background-image: url("../img/gift/gift-mobile.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
 
@@ -21,7 +21,6 @@
     &::before {
       background-image: url("../img/gift/gift-tablet.jpg");
       width: 707px;
-      height: 200px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/gift/gift-tablet@2x.jpg");
@@ -35,7 +34,6 @@
     &::before {
       background-image: url("../img/gift/gift-desktop.jpg");
       width: 245px;
-      height: 288px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/gift/gift-desktop@2x.jpg");

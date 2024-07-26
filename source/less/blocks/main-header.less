@@ -95,15 +95,14 @@
   width: 20px;
   height: 20px;
   background-image: url("../img/toggle-closed.svg");
-  background-position: center;
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-header--closed .main-nav {
+  .main-header--closed .main-header__main-nav {
     display: none;
   }
 
-  .main-header--opened .main-nav {
+  .main-header--opened .main-header__main-nav {
     position: absolute;
     left: 0;
     right: 0;
@@ -111,7 +110,7 @@
     background-color: @light;
   }
 
-  .main-header--nojs .main-nav {
+  .main-header--nojs .main-header__main-nav {
     display: block;
     position: static;
   }
